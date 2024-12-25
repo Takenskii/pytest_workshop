@@ -1,3 +1,6 @@
+import pytest_
+
+
 def get_words(text):
     return text.split()
 
@@ -15,3 +18,6 @@ def test_get_words_return_empty_list_for_empty_text():
     words = get_words(text)
     assert expected_words == words
 
+# def test_get_words_raise_exception_for_none():
+#     with pytest.raises(AttributeError):
+#         get_words(None)
